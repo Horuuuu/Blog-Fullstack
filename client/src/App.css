@@ -1,0 +1,350 @@
+.App {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #ffb75e; /* fallback for old browsers */
+}
+
+.post {
+  width: 400px;
+  height: 300px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  border: 1px solid lightgray;
+  font-family: Arial, Helvetica, sans-serif;
+  background: white;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.post:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  cursor: pointer;
+}
+.post .title {
+  flex: 20%;
+  border-bottom: 1px solid lightgray;
+  background-color: orangered;
+  display: grid;
+  place-content: center;
+  color: white;
+}
+
+.post .body {
+  flex: 60%;
+  display: grid;
+  place-content: center;
+  margin: 15px;
+}
+
+.post .footer {
+  flex: 20%;
+  border-top: 1px solid lightgray;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  background-color: orangered;
+  color: white;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.footer .username {
+  flex: 50%;
+}
+.footer .username a {
+  color: white;
+}
+.footer .buttons {
+  flex: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.likeBttn {
+  color: white;
+}
+.unlikeBttn {
+  color: black;
+}
+.buttons label {
+  margin-right: 20px;
+  margin-left: 10px;
+}
+/* CREATE POST PAGE  */
+
+.createPostPage {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100vw;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 500px;
+  height: auto;
+  padding: 20px;
+  border: 5px solid orangered;
+  border-radius: 5px;
+  margin-top: 5px;
+  background: white;
+}
+
+.formContainer #inputCreatePost {
+  height: 40px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 2px solid grey;
+  border-radius: 5px;
+  padding-left: 10px;
+  font-size: 20px;
+}
+
+.formContainer button {
+  margin-top: 15px;
+  height: 40px;
+  border: none;
+  background-color: orangered;
+  border-radius: 5px;
+  color: white;
+}
+
+.formContainer button:hover {
+  cursor: pointer;
+  background-color: orange;
+}
+
+span {
+  color: red;
+}
+
+/* NAVBAR */
+
+.navbar {
+  width: 100%;
+  height: 70px;
+  background-color: orangered;
+  display: flex;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.navbar .links {
+  flex: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.navbar .loggedInContainer {
+  flex: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.navbar a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: white;
+}
+.navbar button {
+  width: 150px;
+  height: 40px;
+  cursor: pointer;
+  margin-right: 10px;
+  background-color: blue;
+  color: white;
+  font-size: medium;
+}
+.navbar button:hover {
+  background-color: orange;
+}
+.navbar h1 {
+  text-align: right;
+  margin-right: 10px;
+  color: white;
+  font-weight: lighter;
+}
+/*  POST INDIVIDUAL*/
+.postPage {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+}
+
+.leftSide {
+  flex: 50%;
+  height: calc(100vh - 70px);
+  display: grid;
+  place-items: center;
+}
+
+.rightSide {
+  flex: 50%;
+  height: calc(100vh - 70px);
+  display: grid;
+  place-items: center;
+}
+.rightSide .addCommentContainer {
+  flex: 20%;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  margin-top: 25px;
+}
+
+.addCommentContainer input,
+button {
+  width: 200px;
+  height: 50px;
+  border-radius: 8px;
+  border: none;
+}
+
+.addCommentContainer button {
+  background-color: orangered;
+  color: white;
+}
+
+.addCommentContainer input {
+  border: 2px solid orangered;
+}
+
+.rightSide .listOfComments {
+  flex: 80%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.listOfComments .comment {
+  width: 70%;
+  height: auto;
+  padding: 10px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  margin-top: 5px;
+  font-size: large;
+  background: white;
+}
+
+.listOfComments label {
+  font-weight: bold;
+  display: table-row;
+}
+.listOfComments button {
+  background-color: red;
+  color: black;
+  font-size: xx-large;
+  float: right;
+  width: 100px;
+}
+.listOfComments button:hover {
+  cursor: pointer;
+}
+#individual {
+  height: 500px;
+  width: 600px;
+}
+
+#individual .title,
+#individual .footer {
+  font-size: 30px;
+}
+
+#individual .body {
+  font-size: 25px;
+}
+#individual button {
+  background-color: blue;
+  color: white;
+  font-size: medium;
+}
+/* LOGIN */
+
+.loginContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  padding-top: 100px;
+}
+
+.loginContainer input,
+button {
+  width: 200px;
+  height: 50px;
+  border-radius: 8px;
+  border: none;
+  margin: 10px;
+}
+
+.loginContainer button {
+  background-color: orangered;
+  color: white;
+}
+
+.loginContainer input {
+  border: 2px solid orangered;
+}
+a {
+  text-decoration: none;
+  font-size: large;
+}
+h1 {
+  font-size: 30px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.btn-profile {
+  background-color: blue;
+  color: white;
+}
+/* CHANGE PASSWORD PAGE*/
+.formChangePassword {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 500px;
+  height: auto;
+  padding: 20px;
+  border: 5px solid orangered;
+  border-radius: 5px;
+  margin-top: 5px;
+  margin-left: 15px;
+  background: white;
+}
+.formChangePassword input {
+  height: 40px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 2px solid grey;
+  border-radius: 5px;
+  padding-left: 10px;
+  font-size: 20px;
+}
+.formChangePassword button {
+  margin-top: 15px;
+  height: 40px;
+  border: none;
+  background-color: orangered;
+  border-radius: 5px;
+  color: white;
+}
+.formChangePassword button:hover {
+  cursor: pointer;
+  background-color: orange;
+}
