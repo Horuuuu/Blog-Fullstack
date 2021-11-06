@@ -25,6 +25,8 @@ Librerias usadas y más:
 
 Diagrama de base de datos:
 
+Cuatro tablas , para los posteos ,  los usuarios ,  los likes y comentarios.
+
 ![](client/public/img/diagrama.jpg)
 
 Dentro de la carpeta server ,en config ,cambiar dialecto y la contraseña,también está el archivo sql con base de datos completa,  sino con la conexión establecida sequelize genera toda la base de datos.
