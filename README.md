@@ -16,12 +16,12 @@ Caracteristicas:
 <li>Página individual del perfil del usuario</li>
 </ul>
 Librerias usadas y más:
-<p>React-Router-Dom para las rutas a las diferentes páginas.</p>
-<p>Axios para peticiones a apis.</p>
-<p>Hooks de React useEffect,useState,useParams ,useHistory,Context Api.</p>
-<p>Formik para  los  formularios y Yup para la validación. </p>
-<p>Bcrypt para el hash de los passwords.</p>
-<p>Iconos de MaterialUI</p>
+<p>:heavy_check_mark:React-Router-Dom para las rutas a las diferentes páginas.</p>
+<p>:heavy_check_mark:Axios para peticiones a apis.</p>
+<p>:heavy_check_mark:Hooks de React useEffect,useState,useParams ,useHistory,Context Api.</p>
+<p>:heavy_check_mark:Formik para  los  formularios y Yup para la validación. </p>
+<p>:heavy_check_mark:Bcrypt para el hash de los passwords.</p>
+<p>:heavy_check_mark:Iconos de MaterialUI</p>
 
 Diagrama de base de datos:
 
